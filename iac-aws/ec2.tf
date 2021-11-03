@@ -17,7 +17,9 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "aws_example_ec2" {
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = "t3.micro"
-  vpc_security_group_ids = [aws_security_group.aws_example_instance.id]
+  key_name               = aws_key_pair.amanda-example-kp.key_name
+  subnet_id              = aws_subnet.amanda-example-subnet.id
+  vpc_security_group_ids = [aws_security_group.amanda_example_sg.id]
 
   user_data = <<-EOF
  #!/bin/bash

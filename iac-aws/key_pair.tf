@@ -1,0 +1,5 @@
+resource "aws_key_pair" "amanda-example-kp" {
+  key_name = "terraform-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDv66gspXhpjBoZ7VRnaYaLnplD+0JVUWfApSX92KCjRDJYGb+vzQzK3QjH5T8I1MF/FtNS4rwf+XPQwWZJW6KYIOdp4LhGt28qbf1M5qmjpxMm3T1+fcZsqqzMm3iT09hFAnd8gIgfcvfrAKjlVa8UVd/grQI34R0pkD1Mc/nTyTKS1tJeZ7Q9y/U3cLmDDnyCWNms8wWUGRsFnblvrY53oX5KBV+9Kc55C+7QbHupYlf7z1yA8FuWGWVxYVzc6+rqWA1Gmb8resKIIi4bPKESTNBlVeO58E5RBTzw9wrKhJaiqCyazJkIB7y09eWcljjraM5sXXzpDrSsMNEhq06vQ8E3kwSJB1hj3kq12CW+tpztyuByZ1xZv5tgCWOnig+q2enY/iUM7RhcZgNwVuPFFNwGkwSRLPQqjX3jzc3QN0XLd6fTUHquDKkbmKMJqKEwnuIzNVI9GubPhINKCluMTpdA7GyFEqon29q6wtjI/u/swhHN0M4PQaoi4S+3kt8= amanda@amandaknowstech"
+
+}
