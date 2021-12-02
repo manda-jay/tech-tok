@@ -1,4 +1,4 @@
-data "aws_iam_policy_document" "iam-role-policy" {
+data "aws_iam_policy_document" "iam-role-policy2" {
   statement {
     actions   = ["s3:ListBucket"]
     resources = ["arn:aws:s3:::${aws_s3_bucket.backend.id}"]

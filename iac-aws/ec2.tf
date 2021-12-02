@@ -14,7 +14,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical: publisher of ubuntu
 }
 
-resource "aws_instance" "aws_example_ec2" {
+resource "aws_instance" "aws_example_ec3" {
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = "t3.micro"
   key_name               = aws_key_pair.amanda-example-kp.key_name

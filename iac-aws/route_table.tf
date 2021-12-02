@@ -1,4 +1,4 @@
-resource "aws_route_table" "amanda-example-route-table" {
+resource "aws_route_table" "amanda-example-route-table_2" {
   vpc_id = aws_vpc.amanda-example-vpc.id
   route {
     cidr_block = "0.0.0.0/0"
